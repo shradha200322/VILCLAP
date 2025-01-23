@@ -25,7 +25,7 @@ async function main(){
      await mongoose.connect('mongodb://127.0.0.1:27017/vilclap')
 }
 app.get("/vilclap",(req,res)=>{
-    res.render("pages/index.ejs");
+    res.render("pages/index.ejs");  //shradha gandiiiiiiiiiiii
 })
 
 app.get("/vilclap/jobs",async(req,res)=>{

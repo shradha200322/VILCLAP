@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #2C3E50;
+    background: rgba(173, 216, 230, 0.5); /* Subtle transparent blue */
+    animation: fadeIn 1.5s;
+}
+
+h1 {
+    font-family: 'Roboto Slab', serif;
+    color: #34495E;
+    text-align: center;
+    margin-top: 20px;
+}
+
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #FFFFFF;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 10px;
+    font-size: 1rem;
+}
+
+input[type="text"], input[type="email"], input[type="password"], input[type="file"], textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #BDC3C7;
+    border-radius: 6px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus, textarea:focus, select:focus {
+    border-color: #2980B9;
+    outline: none;
+    box-shadow: 0 0 5px rgba(41, 128, 185, 0.5);
+}
+
+button {
+    background-color: #2980B9;
+    color: #FFFFFF;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    font-family: 'Roboto', sans-serif;
+}
+
+button:hover {
+    background-color: #1A5276;
+    transform: scale(1.05);
+}
+
+textarea {
+    resize: none;
+}
+
+label {
+    font-size: 1rem;
+    color: #2C3E50;
+}
+
+tr:nth-child(odd) td {
+    background-color: #ECF0F1;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

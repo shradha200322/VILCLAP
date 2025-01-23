@@ -1,0 +1,285 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #F0F8FF, #D0E8D8);
+    color: #333;
+    background-image: url("village.jpg");
+    background-attachment: fixed; /* Keeps the background image static while scrolling */
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center;
+}
+
+header {
+    background: #4CAF50;
+    color: white;
+    padding: 2em;
+    text-align: center;
+    border-bottom: 4px solid #388E3C;
+    width: 100%;
+    margin: 0;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin: 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: #388E3C;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.nav a:hover {
+    background-color: #81C784;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.section {
+    background-color: #fff;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+    font-size: 2rem;
+    color: #388E3C;
+    text-align: center;
+}
+
+.section p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+    text-align: center;
+}
+
+.section .btn {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    text-align: center;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.section .btn:hover {
+    background-color: #388E3C;
+}
+
+.forum-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.forum-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.forum-card:hover {
+    transform: translateY(-10px);
+}
+
+.forum-card h3 {
+    color: #388E3C;
+    font-size: 1.5rem;
+}
+
+.forum-card p {
+    color: #777;
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+footer {
+    background-color: #388E3C;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section {
+        padding: 20px;
+    }
+
+    .forum-section {
+        grid-template-columns: 1fr;
+    }
+}
+
+.navbar{
+    height: 5rem;
+    background-color: white;
+}
+
+.fa-compass{
+    color:#fe424d;
+    font-size: 2rem;
+}
+.nav-link{
+    color:#222222 !important;
+}
+.f-info{
+    height:8rem;
+    background-color: #ebebeb;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-evenly;
+
+}
+
+.f-info-links a{
+    text-decoration: none;
+    color: #222222;
+    display: flex;
+    align-items: space-evenly;
+}
+
+.f-info-links a:hover{
+    text-decoration: underline;
+}
+.f-info-links , .f-info-socials,.f-info-brand{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.f-info-socials i{
+    font-size: 1.2rem;
+    margin-right:2rem;
+    margin-top: 0.5rem;;
+}
+.navbar-brand img {
+    border-radius: 50%; /* Makes the logo circular */
+    margin-right: 10px; /* Adds spacing between the logo and text */
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #f8f9fa; /* Light background */
+    border-bottom: 1px solid #ddd; /* Subtle border at the bottom */
+    padding: 0.5rem 1rem;
+}
+
+.navbar-brand {
+    font-family: 'Poppins', sans-serif; /* Use modern fonts */
+    font-size: 1.3rem; /* Adjust font size */
+    color: #198754; /* Green for brand */
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand img {
+    border: 2px solid #198754; /* Add border to logo */
+    border-radius: 50%; /* Rounded logo */
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.navbar-nav .nav-link {
+    margin: 0 15px; /* Add spacing between links */
+    font-weight: 500; /* Medium font weight */
+    color: #343a40; /* Dark color for links */
+    transition: color 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #198754; /* Green on hover */
+}
+
+.navbar-nav .dropdown-menu {
+    border-radius: 8px; /* Rounded corners for dropdown */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Shadow for dropdown */
+    background-color: #ffffff;
+}
+
+.navbar-toggler-icon {
+    background-color: #198754; /* Green toggler icon */
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+}
+
+.navbar-toggler {
+    border: none; /* Remove border around toggler */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+}
+
+.navbar {
+    background: linear-gradient(90deg, #198754, #28a745); /* Green gradient */
+    color: #ffffff; /* White text */
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff;
+}
+
+.navbar-nav .nav-link:hover {
+    text-decoration: underline; /* Subtle hover effect */
+}
+.title{
+    color:#0c0101
+}

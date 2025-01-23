@@ -1,0 +1,38 @@
+<%- layout("/layouts/boilerplate") %>
+
+<body>
+    <div class="container mt-4">
+        <h1 class="text-center mb-4">Available Jobs</h1>
+        <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 g-4">
+            <% for (let category of alljobs) { %>
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-header bg-primary text-white">
+                            <h5 class="card-title"><%= category.category %></h5>
+                        </div>
+                        <div class="card-body">
+                            <% if (category.jobs.length > 0) { %>
+                                <% category.jobs.forEach(job => { %>
+                                    <div class="mb-3 border-bottom pb-2">
+                                        <h6 class="card-subtitle mb-2 text-muted"><%= job.title %></h6>
+                                        <p class="card-text">
+                                            <strong>Description:</strong> <%= job.description %><br>
+                                            <strong>Skills Required:</strong> <%= job.skillsRequired.join(", ") || "None" %><br>
+                                            <strong>Location:</strong> <%= job.location %><br>
+                                            <% if (job.salaryRange) { %>
+                                                <strong>Salary Range:</strong> <%= job.salaryRange %>
+                                            <% } %>
+                                        </p>
+                                        <a class="btn btn-primary" href="/vilclap/job/form" role="button">Apply now</a>
+                                    </div>
+                                <% }) %>
+                            <% } else { %>
+                                <p class="text-muted">No jobs available in this category.</p>
+                            <% } %>
+                        </div>
+                    </div>
+                </div>
+            <% } %>
+        </div>
+    </div>
+</body>
